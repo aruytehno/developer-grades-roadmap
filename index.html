@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сравнение грейдов разработчиков</title>
+  <!-- Main CSS File -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Сравнительная таблица грейдов разработчиков</h1>
+            <p class="description">Данная таблица показывает прогрессию навыков и ответственности на пути от стажера до старшего разработчика</p>
+        </header>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="aspect">Аспект</th>
+                        <th class="grade-header">Intern / Trainee</th>
+                        <th class="grade-header">Junior</th>
+                        <th class="grade-header">Middle</th>
+                        <th class="grade-header">Senior</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="aspect">Основной фокус</td>
+                        <td class="intern">Изучение основ, синтаксиса</td>
+                        <td class="junior">Написание работающего кода</td>
+                        <td class="middle">Создание надежных и поддерживаемых модулей</td>
+                        <td class="senior highlight">Оптимальная архитектура и бизнес-ценность продукта</td>
+                    </tr>
+                    <tr>
+                        <td class="aspect">Источник задач</td>
+                        <td class="intern">Четкие микрозадачи от ментора</td>
+                        <td class="junior">Технические задания (ТЗ) от тимлида</td>
+                        <td class="middle">Бизнес-задачи (фичи/баги)</td>
+                        <td class="senior highlight">Пользовательские и бизнес-проблемы</td>
+                    </tr>
+                    <tr>
+                        <td class="aspect">Сложность задач</td>
+                        <td class="intern">Небольшие функции, исправления багов</td>
+                        <td class="junior">Функции средней сложности в рамках одного модуля</td>
+                        <td class="middle highlight">Сложные функции, затрагивающие несколько модулей</td>
+                        <td class="senior">Сквозные функции, оптимизация legacy, самые сложные баги</td>
+                    </tr>
+                    <tr>
+                        <td class="aspect">Самостоятельность</td>
+                        <td class="intern">Постоянный контроль и помощь</td>
+                        <td class="junior">Требует проверки и руководства</td>
+                        <td class="middle">Полная самостоятельность в рамках задачи</td>
+                        <td class="senior highlight">Самостоятельность в рамках продукта</td>
+                    </tr>
+                    <tr>
+                        <td class="aspect">Работа с архитектурой</td>
+                        <td class="intern">Следует готовым шаблонам в коде</td>
+                        <td class="junior">Следует принятым в проекте подходам</td>
+                        <td class="middle highlight">Предлагает улучшения архитектуры своего модуля</td>
+                        <td class="senior highlight">Проектирует и меняет архитектуру модулей/сервисов</td>
+                    </tr>
+                    <tr>
+                        <td class="aspect">Качество кода</td>
+                        <td class="intern">"Код работает"</td>
+                        <td class="junior">"Код работает и соответствует стандартам"</td>
+                        <td class="middle highlight">"Код эффективен, покрыт тестами и легко поддерживается"</td>
+                        <td class="senior">"Код является эталоном для команды"</td>
+                    </tr>
+                    <tr>
+                        <td class="aspect">Тестирование</td>
+                        <td class="intern">Учится писать unit-тесты</td>
+                        <td class="junior">Пишет unit-тесты по указанию</td>
+                        <td class="middle highlight">Самостоятельно покрывает код тестами (unit, integration)</td>
+                        <td class="senior highlight">Проектирует тест-планы, развивает тестовую инфраструктуру</td>
+                    </tr>
+                    <tr>
+                        <td class="aspect">Поиск решений</td>
+                        <td class="intern">Ищет ответы в документации и у ментора</td>
+                        <td class="junior">Ищет решения в интернете (Stack Overflow)</td>
+                        <td class="middle highlight">Анализирует и выбирает лучшее решение из нескольких</td>
+                        <td class="senior highlight">Создает и обосновывает новые решения</td>
+                    </tr>
+                    <tr>
+                        <td class="aspect">Код-ревью</td>
+                        <td class="intern">Учится читать код других</td>
+                        <td class="junior">Получает правки в ревью</td>
+                        <td class="middle highlight">Получает и дает осмысленные правки в ревью</td>
+                        <td class="senior highlight">Проводит ревью, формирует культуру качества в команде</td>
+                    </tr>
+                    <tr>
+                        <td class="aspect">Работа с ошибками</td>
+                        <td class="intern">Исправляет по указанию ментора</td>
+                        <td class="junior">Исправляет известные ошибки по инструкции</td>
+                        <td class="middle highlight">Предвидит и обрабатывает ошибки, пишет устойчивый код</td>
+                        <td class="senior highlight">Расследует корневые причины сложных ошибок в системе</td>
+                    </tr>
+                    <tr>
+                        <td class="aspect">Коммуникация</td>
+                        <td class="intern">Задает много вопросов "как?"</td>
+                        <td class="junior">Сообщает о статусе задачи и проблемах</td>
+                        <td class="middle highlight">Проактивно коммуницирует о рисках и предлагает идеи</td>
+                        <td class="senior highlight">Доносит тех. решения до нетехнических специалистов</td>
+                    </tr>
+                    <tr>
+                        <td class="aspect">Менторство</td>
+                        <td class="intern">Активно учится</td>
+                        <td class="junior">Делится найденными решениями с коллегами</td>
+                        <td class="middle">Помогает Junior-разработчикам, проводит знания</td>
+                        <td class="senior highlight">Формально менторит Junior/Middle, улучшает онбординг</td>
+                    </tr>
+                    <tr>
+                        <td class="aspect">Пример задачи</td>
+                        <td class="intern">"Исправь опечатку в сообщении"</td>
+                        <td class="junior">"Добавь новое поле в форму и сохрани его в БД"</td>
+                        <td class="middle highlight">"Реализуй механизм кэширования для снижения нагрузки"</td>
+                        <td class="senior">"Перепроектируй модуль аутентификации для масштабирования"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>Используйте эту таблицу для оценки своего уровня и планирования карьерного роста</p>
+        </footer>
+    </div>
+</body>
+</html>
