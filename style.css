@@ -1,120 +1,244 @@
- * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+/* style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-        body {
-            background-color: #f5f7fa;
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
-        }
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
 
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 20px 0;
-            border-bottom: 1px solid #eaeaea;
-        }
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eaeaea;
+}
 
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
 
-        .description {
-            color: #7f8c8d;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+h2 {
+    color: #2c3e50;
+    margin: 40px 0 20px 0;
+    font-size: 1.8em;
+}
 
-        .table-container {
-            overflow-x: auto;
-        }
+.description {
+    color: #7f8c8d;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 25px 0;
-            min-width: 800px;
-        }
+/* Career Tracks Styles */
+.career-tracks {
+    margin-bottom: 50px;
+}
 
-        th, td {
-            padding: 12px 15px;
-            text-align: left;
-            border: 1px solid #ddd;
-        }
+.track {
+    display: flex;
+    align-items: flex-start;
+    margin: 25px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    color: white;
+}
 
-        th {
-            background-color: #3498db;
-            color: white;
-            position: sticky;
-            top: 0;
-        }
+.track-icon {
+    font-size: 2em;
+    margin-right: 20px;
+    min-width: 60px;
+    text-align: center;
+}
 
-        tr:nth-child(even) {
-            background-color: #f8f9fa;
-        }
+.track-content h3 {
+    margin: 0 0 10px 0;
+    color: white;
+    font-size: 1.3em;
+}
 
-        tr:hover {
-            background-color: #e8f4fc;
-        }
+.track-path {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
 
-        .grade-header {
-            text-align: center;
-            font-weight: bold;
-            background-color: #2c3e50;
-            color: white;
-        }
+.grade-level {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
 
-        .aspect {
-            font-weight: 600;
-            background-color: #ecf0f1;
-            width: 20%;
-        }
+.grade-level:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
 
-        .intern {
-            background-color: #fef9e7;
-        }
+/* Table Styles */
+.comparison-section {
+    margin-top: 40px;
+}
 
-        .junior {
-            background-color: #ebf5fb;
-        }
+.table-container {
+    overflow-x: auto;
+    margin: 30px 0;
+}
 
-        .middle {
-            background-color: #e8f8f5;
-        }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
 
-        .senior {
-            background-color: #eafaf1;
-        }
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
 
-        .highlight {
-            background-color: #fff8e1;
-            font-weight: 600;
-        }
+th {
+    background-color: #3498db;
+    color: white;
+    position: sticky;
+    top: 0;
+    font-weight: 600;
+}
 
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            color: #7f8c8d;
-            font-size: 0.9em;
-        }
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
 
-        @media (max-width: 768px) {
-            th, td {
-                padding: 8px 10px;
-                font-size: 0.9em;
-            }
-        }
+tr:hover {
+    background-color: #e8f4fc;
+    transition: background-color 0.2s ease;
+}
+
+.grade-header {
+    text-align: center;
+    font-weight: bold;
+    background-color: #2c3e50;
+    color: white;
+    min-width: 120px;
+}
+
+.aspect {
+    font-weight: 600;
+    background-color: #ecf0f1;
+    width: 20%;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+}
+
+.intern {
+    background-color: #fef9e7;
+}
+
+.junior {
+    background-color: #ebf5fb;
+}
+
+.middle {
+    background-color: #e8f8f5;
+}
+
+.senior {
+    background-color: #eafaf1;
+}
+
+.highlight {
+    background-color: #fff8e1;
+    font-weight: 600;
+    position: relative;
+}
+
+.highlight::after {
+    content: '★';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #f39c12;
+    font-size: 0.8em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #eaeaea;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .track {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .track-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .track-path {
+        justify-content: center;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .grade-level {
+        padding: 6px 12px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .track-path {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .grade-level {
+        width: 100%;
+        text-align: center;
+    }
+}
